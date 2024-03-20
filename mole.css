@@ -1,9 +1,39 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-/* background: url("./mario-bg.jpg");*/
     background-size: cover;
 }
+
+.mole {
+    animation: popUp 0.25s ease forwards;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.mole-hide {
+    animation: hide 0.25s ease forwards;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
 
 #board {
     width: 540px;
